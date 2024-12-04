@@ -5,3 +5,4 @@ Temp
 *.csproj
 .vscode
 Logs
+.DS_Store
