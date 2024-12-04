@@ -329,13 +329,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398352158}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.5539256, y: -0.5491362, z: 0.44057634, w: 0.44441915}
+  m_LocalPosition: {x: 0, y: 2.62, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -179.514, y: 77.479996, z: -89.892}
 --- !u!1 &702182311
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,12 +522,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45.434002, y: -444.229, z: -440.193}
---- !u!4 &1759231644 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1879085710729615437, guid: 21a238d586476a0468db351e20eb1d3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 8461034418077094816}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8461034418077094816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -543,13 +537,13 @@ PrefabInstance:
     - target: {fileID: 5828605851898172601, guid: 21a238d586476a0468db351e20eb1d3f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5828605851898172602, guid: 21a238d586476a0468db351e20eb1d3f,
         type: 3}
       propertyPath: m_RootBone
       value: 
-      objectReference: {fileID: 1759231644}
+      objectReference: {fileID: 8461034418077094819}
     - target: {fileID: 6604685570462912003, guid: 21a238d586476a0468db351e20eb1d3f,
         type: 3}
       propertyPath: m_RootOrder
@@ -627,21 +621,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animName: zhaoyun
   animClips:
+  - {fileID: 7400000, guid: 19db1d36ac68a964daf0ee215c1411b9, type: 2}
   - {fileID: 1827226128182048838, guid: 8d1f7936f3c2e4f4bb7d0f724b982dab, type: 3}
-  wrapModes: 00000000
-  fpsList: 00000000
-  rootMotionEnabled: 00
-  individualDifferenceEnabled: 00
+  wrapModes: 0100000000000000
+  fpsList: 0000000000000000
+  rootMotionEnabled: 0000
+  individualDifferenceEnabled: 0000
   lodMeshes: []
   lodDistances: []
   sphereRadius: 1
   createNewShader: 0
   texture: {fileID: 4900000, guid: 88176e0c491810e4880566772bfd5339, type: 3}
   skinQuality: 1
-  rootBoneTransform: {fileID: 1759231644}
+  rootBoneTransform: {fileID: 8461034418077094819}
   anim: {fileID: 11400000, guid: 96c0c4382856e514680614035396f3a3, type: 2}
   shaderType: 0
   savedMesh: {fileID: 4300000, guid: df99f06450222ee42a968e1008b078f2, type: 2}
   savedMtrl: {fileID: 2100000, guid: 7f9946bb6d814fb4f8fd23b53a362f77, type: 2}
   savedShader: {fileID: 4800000, guid: 7d6d59d472e7040e48521124f23bf091, type: 3}
   updateOrNew: 1
+--- !u!4 &8461034418077094819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3534942807226501933, guid: 21a238d586476a0468db351e20eb1d3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8461034418077094816}
+  m_PrefabAsset: {fileID: 0}
