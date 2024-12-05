@@ -894,7 +894,8 @@ public class SimpleLOD_MaterialPopup : EditorWindow {
 			foreach(string key in textureKeys) {
 				if(mat.HasProperty(key)) {
 					Texture tex = mat.GetTexture(key);
-					if(tex.GetType() == typeof(Texture2D)) {
+					// Debug.Log("你妹啊~" + tex + " - " + key);
+					if(tex!=null && tex.GetType() == typeof(Texture2D)) {
 						Texture2D readableTex = MakeReadable((Texture2D)tex);
 						ReplaceTextureInAllMaterialsInAllRows(tex, readableTex);
 					}
